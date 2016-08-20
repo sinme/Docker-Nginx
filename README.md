@@ -28,7 +28,7 @@ services:
         container_name: php
         restart: always
         privileged: true
-        image: longtaijun/docker-php:latest
+        image: longtaijun/php:latest
         volumes:
         - /etc/localtime:/etc/localtime:ro
         - /data/wwwroot:/data/wwwroot:rw
@@ -38,7 +38,7 @@ services:
         container_name: mariadb
         restart: always
         privileged: true
-        image: longtaijun/docker-mariadb:latest
+        image: longtaijun/mariadb:latest
         ports:
         - "3306:3306"
         environment:
@@ -52,7 +52,7 @@ services:
         container_name: nginx
         restart: always
         privileged: true
-        image: longtaijun/docker-nginx:latest
+        image: longtaijun/nginx:latest
         ports:
         - "80:80"
         - "443:443"
