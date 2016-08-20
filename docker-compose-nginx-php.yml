@@ -6,7 +6,7 @@ services:
 			context: https://github.com/LongTaiJun/Docker-PHP.git
 		restart: always
 		privileged: true
-		image: longtaijun/docker-php:latest
+		image: longtaijun/php:latest
 		volumes:
 		- /etc/localtime:/etc/localtime:ro
 		- /data/wwwroot:/data/wwwroot:rw
@@ -15,7 +15,7 @@ services:
 			context: https://github.com/LongTaiJun/Docker-Nginx.git
 		restart: always
 		privileged: true
-		image: longtaijun/docker-nginx:latest
+		image: longtaijun/nginx:latest
 		ports:
 		- "80:80"
 		- "443:443"
