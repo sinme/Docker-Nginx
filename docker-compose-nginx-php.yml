@@ -3,19 +3,19 @@ version: '2'
 services:
 	php:
 		build:
-			context: https://github.com/xiaoyawl/docker-php.git
+			context: https://github.com/LongTaiJun/Docker-PHP.git
 		restart: always
 		privileged: true
-		image: benyoo/php:latest
+		image: longtaijun/docker-php:latest
 		volumes:
 		- /etc/localtime:/etc/localtime:ro
 		- /data/wwwroot:/data/wwwroot:rw
 	nginx:
 		build:
-			context: https://github.com/xiaoyawl/docker-nginx.git
+			context: https://github.com/LongTaiJun/Docker-Nginx.git
 		restart: always
 		privileged: true
-		image: benyoo/nginx:latest
+		image: longtaijun/docker-nginx:latest
 		ports:
 		- "80:80"
 		- "443:443"
