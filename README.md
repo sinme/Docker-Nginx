@@ -6,7 +6,7 @@ curl -fsSL https://get.docker.com/ | sh && \
 service docker start && \
 curl -L https://github.com/docker/compose/releases/download/1.8.0-rc2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && \
 chmod +x /usr/local/bin/docker-compose && \
-wget svipc.qiniudn.com/docker-compose.yml && \
+wget http://mirrors.svipc.com/Docker/docker-compose-lnmp.yml -O docker-compose.yml && \
 docker-compose up -d
 ```
 
